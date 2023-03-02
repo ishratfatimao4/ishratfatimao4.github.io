@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ishrat</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">BEGINNING</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">MY ARTICLES</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>ISHRAT FATIMA</h1>
+            <h2>DATA JOURNALIST - Data Science</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/ishrat-fatima-a85150229/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/ishratfatimao4"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/Ishratfati?t=j9tC1Q9B5WRAdkrmKLVrdQ&s=09"><i class="fa-brands fa-twitter"></i></a> 
+                <a href="https://instagram.com/ishrat_fatmha?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+               <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>About Me</h2>
+            <p><span>Hi, I am Ishrat Fatima</span>  I'm a journalist with 5 years of media experience, as well as a journalist who does coding. I have an MPhil in journalism, and I'm good at presentation skills, google search ideas, business concept development, data analysis, python and SQL, and a passionate journalist.</p>
+
+            <div class="fila">
+                <!-- Personal Data -->
+                <div class="col">
+                    <h3>Personal Data</h3>
+                    <ul>
+                        <li>
+                            <strong>Date of Birth</strong>
+                            03 - 02 - 1997
+                        </li>
+                        <li>
+                            <strong>Telephone</strong>
+                            +92 301 805 3548
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ishratfatima049@gmail.com  
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Address</strong>
+                            Punjab, Pakistan
+                        </li>
+                        <li>
+                            <strong>Charge</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Interests</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Travel</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MEDIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>SPORTS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>BOOKS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>DRIVING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>PHOTO</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+              <a href = "https://docs.google.com/document/d/1DrwCu9L_BMkthuS0OZAiQ16LFw_VpUNt/edit?usp=sharing&ouid=103129805250363729081&rtpof=true&sd=true">  VIEW MY CV <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Data Analysis With Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python (Data Science)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL (database)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Article Writing & Online Journalism</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photojournalism, Mobile Journalism</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creativity</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedication</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Leadership</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4>MS Mass Media and communication</h4>
+                        <span class="casa">Bahauddin Zakariya University Multan</span>
+                        <span class="fecha">12/2019 - 12/2021</span>
+                        <p><ul><li>Thesis Title: Exploring the Effectiveness Of Online Learning On Students During COVID-19: A Case Study Of Multan, Pakistan </li>               
+                         <li> Accomplishment: Research paper published in a reputed journal Global Regional Review  </li> 
+                        <li> I used SPSS software to Analysis data of that thesis  </li></ul>  </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>BS Mass Media and communication</h4>
+                        <span class="casa">The University of Sargodha</span>
+                        <span class="fecha">12/2015 - 05/2019</span>
+                        <p><ul>
+                           <li> Specialization:  Electronic media.  </li>
+                            <li>Research Report in BS: The Impact of TV Fashion Shows on the Dressing Styles of University Students</li>
+                           <li> Accomplishment: Won media expo certificate</li>
+                            <li>I used SPSS software to Analysis data of that research report</li>
+
+
+                        </ul></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Diploma: News Achoring</h4>
+                        <span class="casa">University of Engineering</span>
+                        <span class="fecha">  06/2016 - 12/2016  </span>
+                        <p><ul><li>I did a professional diploma in News Anchoring from the University of Engineering
+                            and Technology in Lahore, Pakistan. 
+                        </li>
+                        <li>
+                            I worked as a News Anchor on social media at UET Lahore for the School of Media Studies.  
+                        </li>
+                        </ul></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experience</h3>
+                    <div class="item der">
+                        <h4>News Producer</h4>
+                        <span class="casa">BOL NEWS</span>
+                        <span class="fecha">02/2017 - 12/201</span>
+                        <p><ul><li>
+                            I worked at BOL NEWS  channel as a producer and worked on New production. </li>
+                        <li> I managed the work of News Bulletins, and Live Beepers </li>
+                          <li>I wrote content for the news and content for programs. </li>
+
+
+                        </ul></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Lady Chief Reporter</h4>
+                        <span class="casa">Daily Awami Mutalba Newspaper</span>
+                        <span class="fecha"> 12/2021 - 12/2022</span>
+                        <p><ul>
+                            <li>
+                                Edit written pieces by other reporters on staff to check for clarity, grammar, and overall story presentation; make suggestions and assist with any revisions that need to be made.</li>
+                                <li>Convert stories to be posted on the company website, and create SEO Friendly social media posts.</li>
+                            </ul></p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Python & Data Analysis Instructor</h4>
+                        <span class="casa">iCodeGuru</span>
+                        <span class="fecha">06/2020 - Present</span>
+                        <p><ul><li>
+                            Teaching data analysis through MYSQL and python</li>
+                         <li> I Delivered a workshop to UOG computer science faculty, on data analysis </li>
+                          <li> I have taught data analysis and python to CS students at icodeguru </li>
+                           <li> I taught IELTS, a language course with 4 modules: Reading, Listening, Writing, and speaking.</li>
+                        </ul>
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>My Articles</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="" >
+                    <div class="overlay"><a href="https://grrjournal.com/article/exploring-the-impact-of-online-learning-on-youngsters-during-covid19-from-the-knowledge-gap-theory-perspective">
+                        <h3>Article:<br> Impact of Online learning on youngsters during Covid-19</h3>
+                        <p>Published in Journals</p></a>
+
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <div class="overlay"><a href="https://thesocialtalks.com/world/2022-fifa-world-cup-qatar-and-controversies/">
+                        <h3>Article: <br>2022 FIFA World Cup: Qatar and Controversies?</h3>
+                        <p>The Socialtalks</p></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay"><a href="https://thesocialtalks.com/opinion/depression-why-is-depression-increasing-in-the-youth/">
+                        <h3>Article: <br> The Prevalence of Depression in Pakistani Youth</h3>
+                        <p>The Socialtalks</p></a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="text" placeholder="Email Address">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Message Me<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Punjab, Pakistan
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                 +92 301 805 3548
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                ishratfatima049@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/ishrat-fatima-a85150229/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/ishratfatimao4"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/ishrat_fatmha?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Ishratfati?t=j9tC1Q9B5WRAdkrmKLVrdQ&s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
